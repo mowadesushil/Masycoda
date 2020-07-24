@@ -1,0 +1,29 @@
+﻿@{
+	ViewBag.Title = "Home Page";
+}
+
+
+<script src="~/Scripts/Site.js"></script>
+
+<div class="row">
+	<div class="col-md-3">Enter No. Of Balls: </div>
+	<div class="col-md-3">Enter Total Operations: </div>
+	<div class="col-md-3">Enter Sequence: </div>
+	<div class="col-md-3"></div>
+</div>
+
+<div class="row">
+	<div class="col-md-3">
+		<input type="text" placeholder="e.g. 4" class="form-control" id="txtNoOfBalls" />
+	</div>
+	<div class="col-md-3">
+		<input type="text" placeholder="e.g. 2" class="form-control" id="txtNoOfOperations" />
+	</div>
+	<div class="col-md-3"><input type="text" placeholder="e.g. BWWB" class="form-control" id="txtSequesnce" /> </div>
+	<div class="col-md-3">
+		<input type="button" class="btn btn-default" value="Get" onclick="GetResponse()" />
+	</div>
+</div>
+
+<label>Output: </label>
+<label id="lblOutPut"></label>
